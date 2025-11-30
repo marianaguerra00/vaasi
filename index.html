@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VAASI - Veículo Autónomo de Assistência em Situações de Incêndio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar fixa -->
+    <header class="navbar">
+        <div class="logo">
+            <span class="logo-main">VAASI</span>
+            <span class="logo-sub">Veículo Autónomo de Assistência em Situações de Incêndio</span>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#projeto">Projeto</a></li>
+                <li><a href="#consorcios">Consórcios</a></li>
+                <li><a href="#equipa">Equipa</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Secção Hero / Início -->
+    <section id="home" class="section hero reveal">
+        <div class="hero-container">
+            <img src="assets/logo-vaasi.png" alt="Logo VAASI" class="hero-logo">
+            
+            <div class="hero-content">
+                <h1>VAASI</h1>
+                <h2>Veículo Autónomo de Assistência em Situações de Incêndio</h2>
+                <p>
+                    Projeto académico focado no desenvolvimento de um veículo autónomo de apoio a operações de combate a incêndios,
+                    aumentando a segurança dos operacionais e a eficiência das operações.
+                </p>
+                <a href="#projeto" class="btn-primary">Saber mais sobre o projeto</a>
+            </div>
+
+            <img src="assets/prototipo.png" alt="Protótipo VAASI" class="hero-prototype">
+
+        </div>
+    </section>
+
+    <!-- Secção Sobre o Projeto (Nova) -->
+    <section id="projeto" class="section reveal">
+        <div class="section-content">
+
+            <h2>Sobre o Projeto</h2>
+
+            <!-- 3 CARTÕES -->
+            <div class="project-cards">
+                <div class="project-card">
+                    <h3>Contexto</h3>
+                    <p>Nos últimos anos, Portugal continua a registar áreas ardidas muito elevadas, apesar de alguma redução do número de 
+                        ignições. Em muitas aldeias do interior, os meios de primeira intervenção chegam tarde, os bombeiros disponíveis são 
+                        poucos e a população tem pouca ou nenhuma capacidade de autoproteção. O VAASI é pensado precisamente para este cenário: 
+                        um conceito de veículo que possa apoiar comunidades expostas, reforçando a primeira linha de resposta nos minutos 
+                        críticos antes da chegada das equipas humanas.</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Motivação</h3>
+                    <p>A análise de grandes incêndios recentes evidencia um padrão recorrente: aldeias pouco protegidas, falta de meios à escala 
+                        local e elevado risco para os operacionais em terreno difícil. Como finalistas de Engenharia Mecânica, identificámos aqui 
+                        uma oportunidade de aplicar competências em projeto de sistemas, controlo e robótica móvel no desenvolvimento conceptual 
+                        de um veículo autónomo que possa, no futuro, reduzir a exposição humana ao risco e aumentar a resiliência das comunidades.</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Objetivos</h3>
+                    <p>O projeto VAASI, desenvolvido no âmbito do Mestrado em Engenharia Mecânica da Universidade de Aveiro, tem como objetivo principal estudar e 
+                        definir a arquitetura técnica de um veículo autónomo de apoio ao combate a incêndios em zonas remotas.
+                        Nesta fase, os objetivos específicos passam por:
+                        <ul class="project-bullets">
+                            <li>Caracterizar o cenário de utilização e os requisitos operacionais do veículo em contexto de aldeia;</li>
+                            <li>Propor uma arquitetura coerente de subsistemas;</li>
+                            <li>Justificar, de forma preliminar, opções tecnológicas e de dimensionamento</li>
+                        </ul>
+                        </p>
+                </div>
+            </div>
+
+            <!-- FRASE DE TRANSIÇÃO -->
+            <div class="project-intro-block">
+                <h3>O que é o VAASI?</h3>
+                <p>
+                    O VAASI - Veículo Autónomo de Assistência em Situações de Incêndio - é concebido, nesta fase,
+                    como uma plataforma robótica elétrica, semi-autónoma, preparada para operar em todo-o-terreno
+                    e prestar apoio a operações de combate a incêndios em contexto comunitário.
+                </p>
+            </div>
+
+
+            <!-- TIMELINE TÉCNICA -->
+            <div class="vaasi-features">
+
+                <!-- Bloco 1 - Chassis -->
+                <div class="feature-row">
+                    <div class="feature-image">
+                        <img class="gallery-img" src="assets/timeline/chassis.png" alt="Chassis e Estrutura">
+                    </div>
+                    <div class="feature-text">
+                        <h3>Chassis e Estrutura</h3>
+                        <p>No estado atual do estudo, considera-se como referência um chassis em alumínio 6061-T6, 
+                            com a possibilidade de integrar reforços localizados em compósito nas zonas mais 
+                            solicitadas. Esta combinação é analisada por potencialmente oferecer uma boa relação 
+                            entre rigidez, peso e resistência à corrosão, mantendo processos de fabrico compatíveis 
+                            com um protótipo académico.</p>
+                    </div>
+                </div>
+
+                <!-- Bloco 2 - Mobilidade -->
+                <div class="feature-row alt">
+                    <div class="feature-text">
+                        <h3>Mobilidade e Propulsão</h3>
+                        <p>Ao nível da locomoção, está a ser avaliada uma solução baseada em duas lagartas acionadas 
+                            por motores elétricos, dimensionados para garantir mobilidade em terreno acidentado, 
+                            rampas significativas e velocidades adequadas à operação em emergência. Esta configuração 
+                            é vista como promissora para conciliar tração, robustez e controlo a baixa velocidade.</p>
+                    </div>
+                    <div class="feature-image">
+                        <img class="gallery-img" src="assets/timeline/mobilidade.png" alt="Mobilidade e Propulsão">
+                    </div>
+                </div>
+
+                <!-- Bloco 3 - Navegação -->
+                <div class="feature-row">
+                    <div class="feature-image">
+                        <img class="gallery-img" src="assets/timeline/navegacao.png" alt="Navegação e Perceção">
+                    </div>
+                    <div class="feature-text">
+                        <h3>Navegação e Perceção</h3>
+                        <p>Para a navegação, o conceito em estudo recorre à fusão de sensores como LiDAR, câmaras, 
+                            GPS/IMU e câmara térmica, suportados por uma unidade de computação embarcada. O objetivo 
+                            é preparar o veículo para modos de operação semi-autónomos, com supervisão remota, 
+                            tirando partido de algoritmos de planeamento e de visão por computador em desenvolvimento.</p>
+                    </div>
+                </div>
+
+                <!-- Bloco 4 - Combate -->
+                <div class="feature-row alt">
+                    <div class="feature-text">
+                        <h3>Sistema de Combate</h3>
+                        <p>O sistema de combate é pensado como um conjunto híbrido, com tanque de água e reservatório 
+                            de espuma ligados a um canhão com controlo remoto de direção e caudal. Nesta entrega 
+                            intermédia, considera-se que esta solução pode assegurar um alcance útil para missões 
+                            de primeira intervenção, mantendo flexibilidade na escolha do agente extintor.</p>
+                    </div>
+                    <div class="feature-image">
+                        <img class="gallery-img" src="assets/timeline/combate.png" alt="Sistema de Combate">
+                    </div>
+                </div>
+
+                <!-- Bloco 5 - Energia -->
+                <div class="feature-row">
+                    <div class="feature-image">
+                        <img class="gallery-img" src="assets/timeline/energia.png" alt="Energia e Gestão Térmica">
+                    </div>
+                    <div class="feature-text">
+                        <h3>Energia e Gestão Térmica</h3>
+                        <p>A alimentação elétrica é estudada com base numa bateria de tração em tecnologia LiFePO₄, 
+                            gerida por um sistema BMS dedicado, pela sua robustez e maior segurança térmica face a 
+                            outras químicas. Em paralelo, são analisadas soluções de proteção e selagem adaptadas ao 
+                            ambiente severo de operação, incluindo estratégias de arrefecimento e estanquidade dos 
+                            componentes críticos.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="project-conclusion">
+                <p>
+                    No seu conjunto, estas opções representam a configuração atualmente proposta para o VAASI, numa fase ainda conceptual e 
+                    exploratória, pensada para servir como base técnica de um futuro protótipo académico e para ser aprofundada e validada no 
+                    relatório final do projeto.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Secção Consórcios -->
+    <section id="consorcios" class="section section-alt reveal">
+        <div class="section-content">
+            <h2>Consórcios</h2>
+            <p>
+                [informação de como vamos trabalhar com consórcios, o que eles trazem ao projeto, etc.]
+            </p>
+        </div>
+    </section>
+
+    <!-- Equipa -->
+    <section id="equipa" class="section reveal">
+        <div class="section-content">
+            <h2>Equipa</h2>
+
+            <div class="team-carousel">
+                <div class="team-track">
+
+                    <!-- Francisco -->
+                    <div class="member active" data-index="0">
+                        <img src="assets/equipa/francisco.png" alt="Francisco Marques">
+                        <h3>Francisco Marques</h3>
+                        <span class="mec">Nº mec.: 108010</span>
+                        <p>Sou licenciado em Engenharia Mecânica pela Universidade de Aveiro e estou, atualmente, no segundo ano do mestrado. 
+                        Sou motivado, aprendo rápido e adapto-me facilmente. Trabalho bem em equipa, tenho experiência em liderança e costumo abordar 
+                        desafios de forma analítica e proativa.</p>
+                    </div>
+
+                    <!-- Gonçalo -->
+                    <div class="member" data-index="1">
+                        <img src="assets/equipa/goncalo.png" alt="Gonçalo Teles">
+                        <h3>Gonçalo Teles</h3>
+                        <span class="mec">Nº mec.: 130904</span>
+                        <p>Finalista do Mestrado em Eng. Mecânica...</p>
+                    </div>
+
+                    <!-- Mariana -->
+                    <div class="member" data-index="2">
+                        <img src="assets/equipa/mariana.png" alt="Mariana Guerra">
+                        <h3>Mariana Guerra</h3>
+                        <span class="mec">Nº mec.: 107803</span>
+                        <p>Apaixonada por aprender e compreender aquilo que me rodeia. Acredito que o conhecimento surge quando nos envolvemos em novos projetos 
+                             travamos conhecimento com profissionais de outras áreas. Priorizo envolver-me em vários projetos e iniciativas, 
+                             pelo que desde cedo desenvolvi a capacidade de conciliar diversas responsabilidades.</p>
+                    </div>
+
+                    <!-- Matias -->
+                    <div class="member" data-index="3">
+                        <img src="assets/equipa/matias.png" alt="Matias Pinto">
+                        <h3>Matias Pinto</h3>
+                        <span class="mec">Nº mec.: 102980</span>
+                        <p>Finalista do Mestrado em Engenharia Mecânica, considero-me uma pessoa motivada e autodidata, com grande capacidade de aprendizagem 
+                            e adaptação a novos desafios. Destaco-me pela facilidade em trabalhar em equipa, contribuindo para um ambiente colaborativo e 
+                            focado na resolução de problemas.</p>
+                    </div>
+
+                    <!-- Tomás -->
+                    <div class="member" data-index="4">
+                        <img src="assets/equipa/tomas.png" alt="Tomás Rocha">
+                        <h3>Tomás Rocha</h3>
+                        <span class="mec">Nº mec.: 107841</span>
+                        <p>Finalista do Mestrado em Eng. Mecânica...</p>
+                    </div>
+
+                </div> 
+            </div>
+        </div>
+    </section>
+
+    <!-- Secção Contacto -->
+    <section id="contacto" class="section section-alt reveal">
+        <div class="section-content">
+            <h2>Contactos</h2>
+
+            <!-- Tabs -->
+            <div class="contact-tabs">
+                <button class="tab active" data-target="tab-estudantes">Estudantes</button>
+                <button class="tab" data-target="tab-docente">Equipa Docente</button>
+                <button class="tab" data-target="tab-universidade">Universidade</button>
+            </div>
+
+            <!-- Conteúdo das tabs -->
+            <div class="tab-content">
+
+                <!-- Estudantes -->
+                <div id="tab-estudantes" class="tab-panel active">
+                    <div class="contact-grid">
+
+                        <div class="contact-card">
+                            <h3>Francisco Marques</h3>
+                            <a class="email" href="mailto:franciscoluism@ua.pt">franciscoluism@ua.pt</a>
+                            <a class="linkedin" href="https://www.linkedin.com/in/flfalm/">LinkedIn</a>
+                        </div>
+
+                        <div class="contact-card">
+                            <h3>Gonçalo Teles</h3>
+                            <a class="email" href="mailto:grteles@ua.pt">grteles@ua.pt</a>
+                            <a class="linkedin" href="www.linkedin.com/in/gonçalo-teles-a79034188 ">LinkedIn</a>
+                        </div>
+
+                        <div class="contact-card">
+                            <h3>Mariana Guerra</h3>
+                            <a class="email" href="mailto:marianaguerra@ua.pt">marianaguerra@ua.pt</a>
+                            <a class="linkedin" href="https://www.linkedin.com/in/mariana-guerra-71206622b/">LinkedIn</a>
+                        </div>
+
+                        <div class="contact-card">
+                            <h3>Matias Pinto</h3>
+                            <a class="email" href="mailto:matias.pinto@ua.pt">matias.pinto@ua.pt</a>
+                            <a class="linkedin" href="https://www.linkedin.com/in/matias-pinto-b4a349266/ ">LinkedIn</a>
+                        </div>
+
+                        <div class="contact-card">
+                            <h3>Tomás Rocha</h3>
+                            <a class="email" href="mailto:tomassr04@ua.pt">tomassr04@ua.pt</a>
+                            <a class="linkedin" href="https://www.linkedin.com/in/tomassr/">LinkedIn</a>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- Equipa Docente -->
+                <div id="tab-docente" class="tab-panel">
+                    <div class="contact-grid">
+                        <div class="contact-card">
+                            <h3>Sérgio Tavares</h3>
+                            <a class="email" href="mailto:smotavares@ua.pt">smotavares@ua.pt</a>
+                            <a class="linkedin" href="https://www.linkedin.com/in/sergiomotavares/">LinkedIn</a>
+                        </div>
+
+                        <div class="contact-card">
+                            <h3>Pedro Prates</h3>
+                            <a class="email" href="mailto:prates@ua.pt">prates@ua.pt</a>
+                            <a class="linkedin" href="https://www.linkedin.com/in/pedroprates/">LinkedIn</a>
+                        </div>
+
+                        <div class="contact-card">
+                            <h3>Robertt Valente</h3>
+                            <a class="email" href="mailto:robertt@ua.pt">robertt@ua.pt</a>
+                            <a class="linkedin" href="https://www.linkedin.com/in/robertt-valente-80664012/">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Universidade -->
+                <div id="tab-universidade" class="tab-panel">
+                    <div class="contact-links">
+                        <a href="https://www.ua.pt/pt/dem" class="uni-link" target="_blank">Departamento de Engenharia Mecânica</a>
+                        <a href="https://www.ua.pt/" class="uni-link" target="_blank">Universidade de Aveiro</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© <span id="footer-year"></span> VAASI – Projeto académico. Universidade de Aveiro.</p>
+        <small class="footnote">
+            Este website integrou ferramentas de IA no seu desenvolvimento: ChatGPT 5.1 para suporte técnico e Gemini Nano para criação de recursos visuais.
+        </small>
+
+    </footer>
+
+    <!-- LIGHTBOX -->
+    <div id="lightbox" class="lightbox">
+        <span id="close-lightbox" class="close-btn">&times;</span>
+        <img id="lightbox-img" src="" alt="">
+        <button id="prev-btn" class="nav-btn prev">&lt;</button>
+        <button id="next-btn" class="nav-btn next">&gt;</button>
+    </div>
+
+    <button id="back-to-top" class="back-to-top">↑</button>
+
+
+
+<script>
+/* === EQUIPA — ativar membro selecionado === */
+document.addEventListener("DOMContentLoaded", function() {
+    const members = document.querySelectorAll('.member');
+    members.forEach(member => {
+        member.addEventListener('click', () => {
+            document.querySelector('.member.active')?.classList.remove('active');
+            member.classList.add('active');
+        });
+    });
+});
+</script>
+
+<script>
+/* === CONTACTOS — Tabs === */
+document.addEventListener("DOMContentLoaded", () => {
+    const tabs = document.querySelectorAll(".tab");
+    const panels = document.querySelectorAll(".tab-panel");
+
+    tabs.forEach(tab => {
+        tab.addEventListener("click", () => {
+            document.querySelector(".tab.active")?.classList.remove("active");
+            tab.classList.add("active");
+
+            panels.forEach(panel => panel.classList.remove("active"));
+            document.getElementById(tab.dataset.target).classList.add("active");
+        });
+    });
+});
+</script>
+
+<script>
+/* === SCROLLSPY === */
+document.addEventListener("DOMContentLoaded", () => {
+    const sections = document.querySelectorAll("section[id]");
+    const navLinks = document.querySelectorAll(".nav-links a");
+
+    function updateScrollSpy() {
+        let scrollPos = window.scrollY + 150;
+        sections.forEach(section => {
+            let top = section.offsetTop;
+            let height = section.offsetHeight;
+            let id = section.getAttribute("id");
+
+            if (scrollPos >= top && scrollPos < top + height) {
+                navLinks.forEach(link => link.classList.remove("active"));
+                document.querySelector(`.nav-links a[href="#${id}"]`)?.classList.add("active");
+            }
+        });
+    }
+
+    window.addEventListener("scroll", updateScrollSpy);
+    updateScrollSpy();
+});
+</script>
+
+<script>
+/* === ANIMAÇÕES reveal === */
+document.addEventListener("DOMContentLoaded", () => {
+    const revealElements = document.querySelectorAll(".reveal");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("active");
+            }
+        });
+    }, { threshold: 0.2 });
+
+    revealElements.forEach(el => observer.observe(el));
+});
+</script>
+
+<script>
+/* === LIGHTBOX === */
+document.addEventListener("DOMContentLoaded", () => {
+    const galleryImages = document.querySelectorAll(".gallery-img");
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    const closeBtn = document.getElementById("close-lightbox");
+    const nextBtn = document.getElementById("next-btn");
+    const prevBtn = document.getElementById("prev-btn");
+
+    let currentIndex = 0;
+
+    function openLightbox(index) {
+        currentIndex = index;
+        lightboxImg.src = galleryImages[index].src;
+        lightbox.style.display = "flex";
+    }
+
+    function closeLightbox() {
+        lightbox.style.display = "none";
+    }
+
+    function showNext() {
+        currentIndex = (currentIndex + 1) % galleryImages.length;
+        lightboxImg.src = galleryImages[currentIndex].src;
+    }
+
+    function showPrev() {
+        currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+        lightboxImg.src = galleryImages[currentIndex].src;
+    }
+
+    galleryImages.forEach((img, i) => {
+        img.addEventListener("click", () => openLightbox(i));
+    });
+
+    closeBtn.addEventListener("click", closeLightbox);
+    nextBtn.addEventListener("click", showNext);
+    prevBtn.addEventListener("click", showPrev);
+
+    lightbox.addEventListener("click", (e) => {
+        if (e.target === lightbox) closeLightbox();
+    });
+
+    document.addEventListener("keydown", (e) => {
+        if (lightbox.style.display === "flex") {
+            if (e.key === "ArrowRight") showNext();
+            if (e.key === "ArrowLeft") showPrev();
+            if (e.key === "Escape") closeLightbox();
+        }
+    });
+});
+</script>
+
+<script>
+/* === FOOTER YEAR === */
+document.addEventListener("DOMContentLoaded", () => {
+    const yearSpan = document.getElementById("footer-year");
+    if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+    }
+});
+</script>
+
+<script>
+/* === BACK TO TOP === */
+document.addEventListener("DOMContentLoaded", () => {
+    const backToTopBtn = document.getElementById("back-to-top");
+
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 400) {
+            backToTopBtn.classList.add("show");
+        } else {
+            backToTopBtn.classList.remove("show");
+        }
+    });
+
+    backToTopBtn.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+});
+</script>
+
+
+
+</body>
+</html>
+
+
+
+
