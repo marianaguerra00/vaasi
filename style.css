@@ -386,6 +386,77 @@ body {
     display: block;
 }
 
+/* === CONSÓRCIOS — CARTÕES PROFISSIONAIS === */
+
+.consorcio-card {
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 1.8rem 2rem;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    margin-bottom: 2rem;
+}
+
+.section-alt .consorcio-card {
+    background: #f1f5fb;
+}
+
+.consorcio-logo {
+    width: 120px;
+    height: auto;
+    object-fit: contain;
+}
+
+.consorcio-text {
+    flex: 1;
+}
+
+.consorcio-text h3 {
+    color: #0b3d91;
+    margin-bottom: 0.6rem;
+}
+
+.consorcio-text p {
+    margin-bottom: 1rem;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.consorcio-btn {
+    display: inline-block;
+    padding: 0.55rem 1.2rem;
+    background: #0b3d91;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.consorcio-btn:hover {
+    background: #093273;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+    .consorcio-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .consorcio-logo {
+        width: 100px;
+    }
+
+    .consorcio-image {
+        width: 90%;
+        max-width: 320px;
+    }
+}
+
+
 /* =========================================================
    CONTACTOS / TABS
 ========================================================= */
